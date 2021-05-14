@@ -7,7 +7,7 @@ const AboutScreen = () => {
     <div>
       <h1 className="gold-text mb-5">ABOUT</h1>
       <div className="row">
-        <div className="col">
+        <div className="col-sm-12 col-lg-6">
           <p className="white-text about-text">
             Detail Oriented IT Student, enthusiastic about the latest stacks
             related to web development and UI design. I am keen to gain more
@@ -24,7 +24,7 @@ const AboutScreen = () => {
             English: Fluent <br /> Arabic: Native
           </p>
         </div>
-        <div className="col">
+        <div className="col-sm-12 col-lg-6">
           <h4 className="white-text about-text-h"><FaBriefcase /> Experience:</h4>
           <p className="white-text about-text">
             Koadim - SEO internship <br />

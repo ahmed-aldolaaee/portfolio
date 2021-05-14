@@ -5,6 +5,7 @@ import SkillsScreen from "./screens/SkillsScreen";
 import ProjectsScreen from "./screens/ProjectsScreen";
 import AboutScreen from "./screens/AboutScreen";
 import ContactScreen from "./screens/ContactScreen";
+import js from 'bootstrap/dist/js/bootstrap.bundle.min';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path="/about" component={AboutScreen}></Route>
         <Route path="/contact" component={ContactScreen}></Route>
       </div>
+      <script src={js}></script>
     </Router>
   );
 }
