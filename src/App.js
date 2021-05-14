@@ -1,11 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router, Route } from "react-router-dom";
+import Header from "./components/Header";
+import HomeScreen from "./screens/HomeScreen";
+import SkillsScreen from "./screens/SkillsScreen";
+import ProjectsScreen from "./screens/ProjectsScreen";
+import AboutScreen from "./screens/AboutScreen";
+import ContactScreen from "./screens/ContactScreen";
 
 function App() {
   return (
-    <div className="App">
-      
-    </div>
+    <Router>
+      <div className="container">
+        <Header />
+        <Route path="/" component={HomeScreen} exact></Route>
+        <Route path="/skills" component={SkillsScreen}></Route>
+        <Route path="/projects" component={ProjectsScreen}></Route>
+        <Route path="/about" component={AboutScreen}></Route>
+        <Route path="/contact" component={ContactScreen}></Route>
+      </div>
+    </Router>
   );
 }
 

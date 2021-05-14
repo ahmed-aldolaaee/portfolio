@@ -1,4 +1,5 @@
 body {
+  background-color: #181C24;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -7,7 +8,136 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+nav {
+  fill: #DFF1FF;
+  font-size: 24px;
+}
+
+.h-logo {
+  height: 40px;
+  width: 40px;
+}
+
+.white-text {
+  color: #DFF1FF;
+}
+
+.gold-text {
+  color: #F2AF29;
+  font-size: 64px;
+  line-height: 114.9%;
+  letter-spacing: 0.235em;
+}
+
+.main-text {
+  font-size: 36px;
+  letter-spacing: 0.045em;
+  line-height: 114.9%;
+  font-weight: 300;
+}
+
+.about-text {
+  font-size: 30px;
+  line-height: 114.9%;
+}
+
+.about-text-h {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.project-text {
+  font-size: 24px;
+}
+
+.keyboard {
+  height: 210px;
+  width: 250px;
+  filter: invert(57%) sepia(8%) saturate(759%) hue-rotate(162deg) brightness(88%) contrast(89%);
+}
+
+.monitor {
+  height: 400px;
+  width: 400px;
+  filter: invert(57%) sepia(8%) saturate(759%) hue-rotate(162deg) brightness(88%) contrast(89%);
+}
+
+.mouse {
+  height: 120px;
+  width: 120px;
+  filter: invert(57%) sepia(8%) saturate(759%) hue-rotate(162deg) brightness(88%) contrast(89%);
+}
+
+.skill {
+  fill: white;
+  height: 150px;
+  width: 150px;
+  border: 1px solid #dee2e6;
+  border-radius: .25rem;
+}
+
+.html:hover {
+  fill: #e34c26;
+  border-color: #e34c26;
+  box-shadow: 0 4px 8px 0 rgba(227, 76, 38, 0.2), 0 6px 20px 0 rgba(227, 76, 38, 0.19);
+}
+
+.css:hover {
+  fill: #264de4;
+  border-color: #264de4;
+  box-shadow: 0 4px 8px 0 rgba(38, 77, 228, 0.2), 0 6px 20px 0 rgba(38, 77, 228, 0.19);
+}
+
+.javascript:hover {
+  fill: #f0db4f;
+  border-color: #f0db4f;
+  box-shadow: 0 4px 8px 0 rgba(240, 219, 79, 0.2), 0 6px 20px 0 rgba(240, 219, 79, 0.19);
+}
+
+.bootstrap:hover {
+  fill: #563d7c;
+  border-color: #563d7c;
+  box-shadow: 0 4px 8px 0 rgba(86, 61, 124, 0.2), 0 6px 20px 0 rgba(86, 61, 124, 0.19);
+}
+
+.react:hover {
+  fill: #76d7ea;
+  border-color: #76d7ea;
+  box-shadow: 0 4px 8px 0 rgba(97, 219, 251, 0.2), 0 6px 20px 0 rgba(97, 219, 251, 0.19);
+}
+
+.node:hover {
+  fill: #3c873a;
+  border-color: #3c873a;
+  box-shadow: 0 4px 8px 0 rgba(60, 135, 58, 0.2), 0 6px 20px 0 rgba(60, 135, 58, 0.19);
+}
+
+.git:hover {
+  fill: #f34f29;
+  border-color: #f34f29;
+  box-shadow: 0 4px 8px 0 rgba(243, 79, 41, 0.2), 0 6px 20px 0 rgba(243, 79, 41, 0.19);
+}
+
+.postgres:hover {
+  fill: #0064a5;
+  border-color: #0064a5;
+  box-shadow: 0 4px 8px 0 rgba(0, 100, 165, 0.2), 0 6px 20px 0 rgba(0, 100, 165, 0.19);
+}
+
+.mongo:hover {
+  fill: #3FA037;
+  border-color: #3FA037;
+  box-shadow: 0 4px 8px 0 rgba(63, 160, 55, 0.2), 0 6px 20px 0 rgba(63, 160, 55, 0.19);
+}
+
+.figma:hover {
+  fill: #a04aed;
+  border-color: #a04aed;
+  box-shadow: 0 4px 8px 0 rgba(160, 74, 237, 0.2), 0 6px 20px 0 rgba(160, 74, 237, 0.19);
+}
+
+.sass:hover {
+  fill: #cc6699;
+  border-color: #cc6699;
+  box-shadow: 0 4px 8px 0 rgba(204, 102, 153, 0.2), 0 6px 20px 0 rgba(204, 102, 153, 0.19);
 }
