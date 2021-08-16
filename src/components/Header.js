@@ -2,8 +2,14 @@ import { Link } from "react-router-dom";
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 
 const Header = () => {
+
+  const collapser = () => {
+    const x = document.getElementById("navbarNav");
+    x.classList.remove('show');
+  }
+
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark mb-3">
+    <nav className="navbar navbar-expand-lg navbar-dark mb-5">
       <div className="container-fluid">
         <Link className="navbar-brand" to="/">
           <img
@@ -24,30 +30,30 @@ const Header = () => {
         >
           <span className="navbar-toggler-icon"></span>
         </button>
-        <div className="navbar collapse navbar-collapse" id="navbarNav">
+        <div className={`navbar collapse navbar-collapse`} id="navbarNav">
           <ul className="navbar-nav">
             <li className="nav-item">
-              <Link className="nav-link" aria-current="page" to="/">
+              <Link className="nav-link" aria-current="page" to="/" onClick={() => collapser()}>
                 Home
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/skills">
+              <Link className="nav-link" to="/skills" onClick={() => collapser()}>
                 Skills
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/projects">
+              <Link className="nav-link" to="/projects" onClick={() => collapser()}>
                 Projects
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/about">
+              <Link className="nav-link" to="/about" onClick={() => collapser()}>
                 About
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/contact">
+              <Link className="nav-link" to="/contact" onClick={() => collapser()}>
                 Contact
               </Link>
             </li>
@@ -66,7 +72,7 @@ const Header = () => {
             <li className="nav-item">
               <a
                 className="nav-link"
-                href="www.linkedin.com/in/ahmed-aldolaaee"
+                href="https://linkedin.com/in/ahmed-aldolaaee"
                 target="_blank"
                 rel="noreferrer"
               >
